@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap');
+
+html, body, #root {
+  background-color: #ffe6f0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.splash-container {
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.splash-text {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #00b4ff;
+  letter-spacing: -1px;
+  line-height: 1;
+  animation: pulse 1s infinite;
+  user-select: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.splash-bar {
+  height: 4px;
+  width: 100%;
+  background-color: black;
+  margin-top: 8px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.splash-bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: #00b4ff;
+  animation: expand 1.5s ease-in-out forwards;
+}
+
+/* Animaciones */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes expand {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}

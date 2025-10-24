@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap');
+
+.instruction-container {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, #001220 0%, #000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  z-index: 9998;
+  animation: fadeIn 1s ease forwards;
+}
+
+.instruction-box {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px 60px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 180, 255, 0.2);
+  backdrop-filter: blur(10px);
+  max-width: 600px;
+}
+
+.instruction-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #00b4ff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.instruction-text {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.instruction-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-size: 1rem;
+  margin: 20px auto;
+  display: inline-block;
+}
+
+.instruction-list li {
+  margin: 10px 0;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.instruction-list li strong {
+  color: #00b4ff;
+}
+
+.instruction-note {
+  margin-top: 15px;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.instruction-button {
+  margin-top: 30px;
+  background-color: #00b4ff;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.instruction-button:hover {
+  background-color: #008bcc;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
