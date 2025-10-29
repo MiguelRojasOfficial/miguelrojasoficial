@@ -9,11 +9,11 @@ import City from './City'
 import Snow from './Snow'
 
 const airports = [
-  { id: 1, position: new THREE.Vector3(1768, 2, -3180), url: 'https://aeropuerto1.com' },
-  { id: 2, position: new THREE.Vector3(3481, 2.08, -5625), url: 'https://aeropuerto2.com' },
-  { id: 3, position: new THREE.Vector3(3860, 2, -2460), url: 'https://aeropuerto3.com' },
-  { id: 4, position: new THREE.Vector3(6348.65, 2, -5880), url: 'https://aeropuerto4.com' },
-  { id: 5, position: new THREE.Vector3(6615.7, 2.5, -2460), url: 'https://aeropuerto5.com' },
+  { id: 1, position: new THREE.Vector3(1768, 2, -3180), url: 'https://miguelflix.onrender.com' },
+  { id: 2, position: new THREE.Vector3(3481, 2.08, -5625), url: 'https://migueltify.onrender.com' },
+  { id: 3, position: new THREE.Vector3(3860, 2, -2460), url: 'https://migueltv.onrender.com' },
+  { id: 4, position: new THREE.Vector3(6348.65, 2, -5880), url: 'https://miguelstore.onrender.com' },
+  { id: 5, position: new THREE.Vector3(6615.7, 2.5, -2460), url: 'https://miguelcrm.onrender.com' },
 ]
 
 function findExactAirport(planePosition) {
