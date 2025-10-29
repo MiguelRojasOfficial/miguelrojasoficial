@@ -48,8 +48,8 @@ export default function InstructionScreen({ onStart }) {
 
         <p className="instruction-note">
           {lang === 'es'
-            ? <>Mantén presionada la <strong>flecha arriba</strong> para despegar.<br/>El avión subirá automáticamente después de unos segundos.</>
-            : <>Hold the <strong>Up Arrow</strong> key to take off.<br/>The plane will lift automatically after a few seconds.</>}
+            ? <>Busca nuestros cinco aeropuertos.<br />Mantén presionada la <strong>flecha arriba</strong> para despegar.<br/>El avión subirá automáticamente después de unos segundos.</>
+            : <>Search for our five airports.<br />Hold the <strong>Up Arrow</strong> key to take off.<br/>The plane will lift automatically after a few seconds.</>}
         </p>
 
         <div style={{ marginTop: 14, width: '100%' }}>
